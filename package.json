@@ -6,7 +6,7 @@
   "author": "Piyush Ranjan",
   "license": "MIT",
   "scripts": {
-    "start:dev": "webpack-cli serve --mode=development --env development --open --hot",
+    "start:dev": "webpack-cli serve --mode=development --env development --open --hot --history-api-fallback",
     "build": "webpack --mode=production --env production --progress",
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix"

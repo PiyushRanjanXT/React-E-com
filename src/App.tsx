@@ -8,7 +8,10 @@ const App: React.FC = (): React.ReactElement => (
     <Router>
         <Menu></Menu>
         <div className="container">
-            <Route path="/" component={Home} />
+            <Route exact path="/">
+                <Redirect to="/home" />
+            </Route>
+            <Route path="/home" component={Home} />
             <Route path="/product-details" component={ProductDetails} />
         </div>
     </Router>
